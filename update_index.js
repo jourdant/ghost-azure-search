@@ -1,18 +1,27 @@
+//
+// Title:     update_index.js
+// Author:    Jourdan Templeton
+// Blog:      http://blog.jourdant.me
+// Email:     hello@jourdant.me
+// Modified:  06/04/2015 09:50PM NZDT
+//
+
 //import modules
 var request = require('request').defaults({jar: true});
 var htmlToText = require('html-to-text');
 
 //azure settings
 var request = require('request');
+var azure_service = "<searchservicename>";
 var azure_index = "<indexname>";
-var azure_domain = "<searchservicename>";
 var azure_api_key = "<apikey>";
-var azure_url = "https://" + azure_domain + ".search.windows.net/indexes/" + azure_index + "/docs/index?api-version=2015-02-28";
+var azure_url = "https://" + azure_service + ".search.windows.net/indexes/" + azure_index + "/docs/index?api-version=2015-02-28";
 
 //ghost settings
-var ghost_base_url = "http://yourghostblog.com";
+var ghost_base_url = "http://<yourghostblog.com>";
 var ghost_username = "<username>";
 var ghost_password = "<password>";
+
 
 
 //log into ghost

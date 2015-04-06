@@ -1,9 +1,19 @@
-//import request library, add settings
+//
+// Title:     create_index.js
+// Author:    Jourdan Templeton
+// Blog:      http://blog.jourdant.me
+// Email:     hello@jourdant.me
+// Modified:  06/04/2015 09:50PM NZDT
+//
+
+//import modules
 var request = require('request');
+
+//azure settings
+var azure_service = "<searchservicename>";
 var azure_index = "<indexname>";
-var azure_domain = "<searchservicename>";
 var azure_api_key = "<apikey>";
-var azure_url = "https://" + azure_domain + ".search.windows.net/indexes/" + azure_index + "?api-version=2015-02-28";
+var azure_url = "https://" + azure_service + ".search.windows.net/indexes/" + azure_index + "?api-version=2015-02-28";
 
 
 
