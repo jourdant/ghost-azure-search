@@ -1,0 +1,31 @@
+{
+  "name": "ghost-azure-search",
+  "version": "0.1.1",
+  "description": "Scripts to generate and update an Azure Search index from a Ghost blog",
+  "author": "Jourdan Templeton <hello@jourdant.me>",
+  "contributors": [{
+    "name": "Jourdan Templeton",
+    "email": "hello@jourdant.me"
+  }],
+  "scripts": {
+    "create": "node create_index.js",
+    "update": "node update_index.js",
+    "start": "node update_index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jourdant/ghost-azure-search"
+},
+  "keywords": [
+  "jourdant",
+  "ghost",
+  "azure",
+  "search"
+],
+  "dependencies": {
+    "request": "*",
+    "html-to-text": "*"
+  },
+  "preferGlobal": true,
+  "private": true
+}
